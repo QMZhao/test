@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /************纯CSS实现光标下移效果******************/
+         ul {
+            display: -webkit-flex;
+            position: absolute;
+             list-style: none;
+            width: 800px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        li {
+            position: relative;
+            padding: 20px;
+            font-size: 24px;
+            color: #000;
+            line-height:1;
+            -webkit-transition: .2s all linear;
+            -moz-transition: .2s all linear ;
+            -ms-transition: .2s all linear ;
+            -o-transition: .2s all linear ;
+            transition: .2s all linear ;
+            cursor: pointer;
+        }
+        li::before {
+            content: '';
+            position: absolute;
+            top:0;
+            left:100%;
+            width:0;
+            height:100%;
+            border-bottom: 2px solid #000;
+            -webkit-transition: ;
+            -moz-transition:  .2s all linear;
+            -ms-transition:  .2s all linear;
+            -o-transition:  .2s all linear;
+            transition:  .2s all linear;
+        }
+        li:hover::before {
+            width: 100%;
+            top:0;
+            left:0;
+            transition-delay: .1s;
+            border-bottom-color: #000;
+            z-index: -1;
+        }
+        li:hover ~ li::before {
+            left:0;
+        }
+        li:active {
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!--/*只使用 CSS 完成光标跟随效果*/-->
+    <div>
+        <ul>
+            <li>不可思议的css</li>
+            <li>导航栏</li>
+            <li>光标下划线跟随</li>
+            <li>pure css</li>
+            <li>coco</li>
+        </ul>
+    </div>
+</body>
+</html>

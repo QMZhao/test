@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plug_in</title>
+    <link rel="stylesheet" href="css/plug_in.css">
+</head>
+<body>
+    <h2>下拉菜单插件</h2>
+    <br>
+    <div id="my-dropdown" class="dropdown">
+        <a href="javascript:;" data-toggle="dropdown">Dropdown
+            <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu fade">
+            <li class="menu-item">
+                <a href="javascript:;">Action</a>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:;">Another action</a>
+            </li>
+            <li class="menu-item">
+                <a href="javascript:;">Something here</a>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h2>tab菜单切换</h2>
+    <br>
+    <div id="my-tabs">
+        <ul class="tabs">
+            <li class="active"><a data-toggle="tab" href="#contentA">tab1</a></li>
+            <li><a data-toggle="tab" href="#contentB">tab2</a></li>
+            <li><a data-toggle="tab" href="#contentC">tab3</a></li>
+        </ul>
+        <div class="tab-container">
+            <div id="contentA" class="active">Lorem ipsum 1!</div>
+            <div id="contentB">Lorem ipsum dolor sit amet, 2!</div>
+            <div id="contentC">Lorem ipsum dolor sit amet,3!</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <h3>使用“高度动画”实现“手风琴”插件</h3>
+    <br>
+    <div id="my-accordion">
+        <div>《火影忍者》简介</div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam aspernatur assumenda atque cumque deleniti dicta esse, fuga, impedit, nisi perspiciatis ratione sequi temporibus totam voluptates. Error facilis neque perferendis.
+        </div>
+        <div>《海贼王》简介</div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis error eveniet ex hic id inventore, itaque labore magni maiores molestias nulla quibusdam quisquam reiciendis repellat sunt ut vel vero. Magnam.
+        </div>
+        <div>《死神》简介</div>
+        <div>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio placeat quisquam reprehenderit? Consectetur fugiat magnam minima, mollitia, nobis non quas quidem recusandae reiciendis rerum tenetur voluptatem! Deserunt eveniet pariatur ratione.
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/plug_in.js"></script>
+    <script>
+        $("#my-accordion").myaccordion();
+    </script>
+</body>
+</html>

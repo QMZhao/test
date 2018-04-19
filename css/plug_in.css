@@ -1,0 +1,135 @@
+/*通用样式*/
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+li {
+    list-style: none;
+}
+
+/**********dropdown**********/
+.dropdown {
+    width: 70px;
+    height: 30px;
+}
+.dropdown>:first-child {
+    border: 1px solid #000;
+    padding: 6px 12px;
+    box-sizing: border-box;
+}
+.dropdown-menu {
+    width: 200px;
+    border: 1px solid #aaa;
+    box-shadow: 5px 5px 6px #000;
+}
+.dropdown-menu .menu-item>:first-child {
+    padding: 6px 12px;
+    width: 160px;
+}
+.dropdown-menu .menu-item:hover {
+    background: #ddd;
+}
+.dropdown-menu.fade {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:  all .5s linear;
+}
+.dropdown-menu.in {
+    /*height要给到固定的高度，auto或者100%都影响效果，auto没有transition效果，100%高度会乱改*/
+    height: 150px;      
+    opacity: 1;
+}
+
+/************tabs****************/
+
+.tabs a {
+    width: 96px;
+    padding: 6px 12px;
+    text-align: center
+}
+.tabs li {
+    float: left;
+    border-bottom: 1px solid #000;
+}
+.tabs>.active {
+    border: 1px solid #000;
+    border-bottom: 0;
+}
+.tab-container {
+    position: relative;
+}
+.tab-container div {
+    width: 300px;
+    height: 140px;
+    padding: 30px;
+    background: #fff;
+    border: 1px solid #000;
+    border-top: 0;
+    position: absolute;
+    top: 34px;
+    left: 0;
+}
+.active {
+    z-index: 10;
+}
+
+/*************accordion**************/
+/*该class样式可自己单独建立数值*/
+.accordion {
+    width: 80%;
+    margin: 0 auto;
+}
+.accordion .title {
+    background: #eee;
+    border: 1px solid #aaa;
+    padding: 6px;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.accordion .content {
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+.accordion > :last-child {
+    border-bottom: 1px solid #eee;
+}
+.accordion > .content.fade {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all .5s linear;
+}
+.accordion > .content.in {
+    height: 84px;
+    opacity: 1;
+}
+
+/************banner轮播组件*******************/
+/* .banner-container {
+    width: 1200px;
+    height: 400px;
+    margin: 0 auto;
+}
+.banner-container a {
+    width: 100%;
+    height: auto;
+}
+.banner-container img {
+    width: 100%;
+    height: auto;
+} */
+
+
+
+
+
+
+
+
